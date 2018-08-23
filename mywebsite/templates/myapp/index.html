@@ -1,0 +1,13 @@
+{% extends "myapp/base.html" %}
+ 	{% load staticfiles %}
+
+ 	{% block body_block %}
+
+	<div class="jumbotron">
+
+	<h1> Welcom To MySite</h1>
+	<img src="{% static 'images/zz.gif' %}" alt="oops!,show nothing" >
+	{% csrf_token %}
+	</div>
+
+	{% endblock %}
